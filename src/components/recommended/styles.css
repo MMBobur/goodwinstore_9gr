@@ -1,0 +1,91 @@
+.img9{
+    margin-top: -135%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.grid1:hover{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 5%;
+}
+.grid1:hover .img9{
+    opacity: 1;
+}
+.grid1:hover .button1{
+    opacity: 1;
+}
+.button1{
+    opacity: 0;
+}
+
+
+.img10{
+    margin-top: -135%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.grid1:hover .img10{
+    opacity: 1;
+}
+
+
+.img11{
+    margin-top: -140%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.grid1:hover .img11{
+    opacity: 1;
+}
+
+.img12{
+    margin-top: -140%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.grid1:hover .img12{
+    opacity: 1;
+}
+
+
+.img13{
+    margin-top: -140%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.grid1:hover .img13{
+    opacity: 1;
+}
+
+.img14{
+    margin-top: -140%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.grid1:hover .img14{
+    opacity: 1;
+}
+
+.img15{
+    margin-top: -140%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.grid1:hover .img15{
+    opacity: 1;
+}
+
+.img16{
+    margin-top: -140%;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+
+.grid1:hover .img16{
+    opacity: 1;
+}
