@@ -1,0 +1,21 @@
+.btn{position: relative;}
+    .btn::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      bottom: 2px;
+      height: 0.175rem;
+      background: #8da3b2;
+    }
+    .btn-center{
+      color: black;
+      padding-bottom: 10px;
+    }
+    .btn-center::after{
+      transform: scale(1, 1);
+      transition: 0.3s ease;
+    }
+    .btn-center:hover::after{
+      transform: scale(0.5,1);
+    }

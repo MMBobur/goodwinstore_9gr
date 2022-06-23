@@ -1,14 +1,14 @@
 import React from 'react'
 import Footer from '../../components/footer'
 import Newsletter from '../../components/newsletter'
+import Reklama from '../../components/reklama'
 
-import Navbar from "./../../components/navbar"
 
 
 function Home() {
   return (
     <div>
-      <Navbar/>
+      <Reklama />
       <Newsletter />
       <Footer />
     </div>

@@ -1,9 +1,10 @@
 import { Button, Grid, Input, Typography, Box, TextField, Container } from "@mui/material";
 import React from "react";
+import './index.css'
 
 function Newsletter() {
   return (
-    <Box  sx={{backgroundColor:'#C6DEEF',height:{ lg: '15vh', md: '20vh', xs: '30vh'},display:'flex',alignItems:'center',widows:'200px',height:'150px'}}>
+    <Box  sx={{backgroundColor:'#C6DEEF',height:{ lg: '15vh', md: '20vh', xs: '30vh'},display:'flex',alignItems:'center',widows:'200px',height:'150px',marginTop:'80px'}}>
       <Container>
     <Grid container columns={12}>
    <Grid item xs={12} md={6} lg={6}>
@@ -12,8 +13,22 @@ function Newsletter() {
    <Grid item xs={12} md={6} lg={6}>
      <Box sx={{display:'flex'}}>
        <TextField  sx={{ width: "400px",backgroundColor:'#FFFFFF',color:'#B9B4CC',marginLeft:'-280px',height:'100%',borderColor:'#e2e2e2',borderWidth:'1px' }} label='ENTER YOUR EMAIL ADDRESS'></TextField>
-       <TextField sx={{marginLeft:'60px',position:'relative',verticalAlign:'top',fontSize:'14px',lineHeight:'1em',fontFamily:'Open Sans, sans-serif',fontWeight:600,color:'#8DA3B2'}}label="SUBSCRIBE" variant="standard" />
-     </Box>
+      <a
+                    className="btn btn-center"
+                    style={{
+                      fontFamily: "sans-serif",
+                      fontSize: "15px",
+                      textDecoration: "none",
+                      fontWeight: "bold",
+                      marginLeft:'20px',
+                      marginTop:'20px',
+                      color:'#8da3b2'
+                    }}
+                    href="#"
+                  >
+                    SUBSCRIBE
+                  </a>
+       </Box>
    </Grid>
  </Grid>
   </Container>
