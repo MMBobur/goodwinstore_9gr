@@ -1,4 +1,5 @@
 import * as React from 'react';
+import './styles.css'
 import { styled } from '@mui/material/styles';
 import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
@@ -16,6 +17,14 @@ import img5 from "../../assets/image5.webp"
 import img6 from "../../assets/image6.webp"
 import img7 from "../../assets/image7.webp"
 import img8 from "../../assets/image8.webp"
+import img9 from "../../assets/image9.webp"
+import img10 from "../../assets/image10.webp"
+import img11 from "../../assets/image11.webp"
+import img12 from "../../assets/image12.webp"
+import img13 from "../../assets/image13.webp"
+import img14 from "../../assets/image14.webp"
+import img15 from "../../assets/image15.webp"
+import img16 from "../../assets/image16.webp"
 
 const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
@@ -32,75 +41,88 @@ export default function RowAndColumnSpacing() {
             <Container spacing={1}>
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
                     <Grid item md={3} sm={6} xs={12}>
-                        <img style={{ width: '100%', height: '350px' }} src={img1} alt="" />
-                        <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>LARGE TERRARIUM</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                        </Box>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>  $129.00 USD</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                        <Box className='grid1'>
+                            <img style={{ width: '100%', height: '350px' }} src={img1} alt="" />
+                            <img className='img9' style={{ width: '100%', height: '350px' }} src={img9} alt="" />
+                            <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>LARGE TERRARIUM</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                            </Box>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>  $129.00 USD</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Button className='button1' style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                            </Box>
+
                         </Box>
                     </Grid>
 
 
                     <Grid item md={3} sm={6} xs={12}>
-                        <Box style={{ width: '50px', height: '25px', position: 'absolute', marginTop: '10px', backgroundColor: '#DFB272', color: 'white', fontSize: '15px', textAlign: 'center', marginLeft: '10px' }}>-20%</Box>
-                        <img style={{ width: '100%', height: '350px' }} src={img2} alt="" />
-                        <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>DOGS FOOD</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                        </Box>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$12.00 USD <s style={{ color: '#9AC3E1' }}>$15.00 USD</s></Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
-                        </Box>
-                    </Grid>
-
-
-                    <Grid item md={3} sm={6} xs={12}>
-                        <Box style={{ width: '50px', height: '25px', position: 'absolute', marginTop: '10px', backgroundColor: '#DFB272', color: 'white', fontSize: '15px', textAlign: 'center', marginLeft: '10px' }}>-20%</Box>
-                        <img style={{ width: '100%', height: '350px' }} src={img3} alt="" />
-                        <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>ADULT DOGS FOOD</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                        </Box>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$15.00 USD <s style={{ color: '#9AC3E1' }}>$18.00 USD</s></Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                        <Box className='grid1'>
+                            <Box style={{ width: '50px', height: '25px', position: 'absolute', marginTop: '10px', backgroundColor: '#DFB272', color: 'white', fontSize: '15px', textAlign: 'center', marginLeft: '10px' }}>-20%</Box>
+                            <img style={{ width: '100%', height: '350px' }} src={img2} alt="" />
+                            <img className='img10' style={{ width: '100%', height: '350px' }} src={img10} alt="" />
+                            <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>DOGS FOOD</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                            </Box>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$12.00 USD <s style={{ color: '#9AC3E1' }}>$15.00 USD</s></Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Button className='button1' style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                            </Box>
                         </Box>
                     </Grid>
 
 
                     <Grid item md={3} sm={6} xs={12}>
-                        <img style={{ width: '100%', height: '350px' }} src={img4} alt="" />
-                        <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>WEATHER RESISTANT CAGE</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                        <Box className='grid1'>
+                            <Box style={{ width: '50px', height: '25px', position: 'absolute', marginTop: '10px', backgroundColor: '#DFB272', color: 'white', fontSize: '15px', textAlign: 'center', marginLeft: '10px' }}>-20%</Box>
+                            <img style={{ width: '100%', height: '350px' }} src={img3} alt="" />
+                            <img className='img11' style={{ width: '100%', height: '350px' }} src={img11} alt="" />
+                            <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>ADULT DOGS FOOD</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                            </Box>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$15.00 USD <s style={{ color: '#9AC3E1' }}>$18.00 USD</s></Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Button className='button1' style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                            </Box>
                         </Box>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$159.00 USD</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                    </Grid>
+
+
+                    <Grid item md={3} sm={6} xs={12}>
+                        <Box className='grid1'>
+                            <img style={{ width: '100%', height: '350px' }} src={img4} alt="" />
+                            <img className='img12' style={{ width: '100%', height: '350px' }} src={img12} alt="" />
+                            <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>WEATHER RESISTANT CAGE</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                            </Box>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$159.00 USD</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Button className='button1' style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                            </Box>
                         </Box>
                     </Grid>
                 </Grid>
@@ -109,74 +131,86 @@ export default function RowAndColumnSpacing() {
 
                 <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }} sx={{ marginTop: '50px' }}>
                     <Grid item md={3} sm={6} xs={12}>
-                        <Box style={{ width: '50px', height: '25px', position: 'absolute', marginTop: '10px', backgroundColor: '#DFB272', color: 'white', fontSize: '15px', textAlign: 'center', marginLeft: '10px' }}>-20%</Box>
-                        <img style={{ width: '100%', height: '350px' }} src={img5} alt="" />
-                        <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>CATS FOOD</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                        </Box>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$19.00 USD <s style={{ color: '#9AC3E1' }}>$25.00 USD</s></Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
-                        </Box>
-                    </Grid>
-
-
-                    <Grid item md={3} sm={6} xs={12}>
-                        <img style={{ width: '100%', height: '350px' }} src={img6} alt="" />
-                        <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>DOGS FOOD</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                        </Box>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$159.00 USD</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                        <Box className='grid1'>
+                            <Box style={{ width: '50px', height: '25px', position: 'absolute', marginTop: '10px', backgroundColor: '#DFB272', color: 'white', fontSize: '15px', textAlign: 'center', marginLeft: '10px' }}>-20%</Box>
+                            <img style={{ width: '100%', height: '350px' }} src={img5} alt="" />
+                            <img className='img13' style={{ width: '100%', height: '350px' }} src={img13} alt="" />
+                            <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>CATS FOOD</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                            </Box>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$19.00 USD <s style={{ color: '#9AC3E1' }}>$25.00 USD</s></Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Button className='button1' style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                            </Box>
                         </Box>
                     </Grid>
 
 
                     <Grid item md={3} sm={6} xs={12}>
-                        <img style={{ width: '100%', height: '350px' }} src={img7} alt="" />
-                        <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>ADULT DOGS FOOD</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                        </Box>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$159.00 USD</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                        <Box className='grid1'>
+                            <img style={{ width: '100%', height: '350px' }} src={img6} alt="" />
+                            <img className='img14' style={{ width: '100%', height: '350px' }} src={img14} alt="" />
+                            <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>DOGS FOOD</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                            </Box>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$159.00 USD</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Button className='button1' style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                            </Box>
                         </Box>
                     </Grid>
 
 
                     <Grid item md={3} sm={6} xs={12}>
-                        <img style={{ width: '100%', height: '350px' }} src={img8} alt="" />
-                        <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>WEATHER RESISTANT CAGE</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
-                            <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                        <Box className='grid1'>
+                            <img style={{ width: '100%', height: '350px' }} src={img7} alt="" />
+                            <img className='img15' style={{ width: '100%', height: '350px' }} src={img15} alt="" />
+                            <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>ADULT DOGS FOOD</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                            </Box>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$159.00 USD</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Button className='button1' style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                            </Box>
                         </Box>
-                        <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$159.00 USD</Typography>
-                        <Box style={{ display: 'flex', justifyContent: 'center' }}>
-                            <Button style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                    </Grid>
+
+
+                    <Grid item md={3} sm={6} xs={12}>
+                        <Box className='grid1'>
+                            <img style={{ width: '100%', height: '350px' }} src={img8} alt="" />
+                            <img className='img16' style={{ width: '100%', height: '350px' }} src={img16} alt="" />
+                            <Typography style={{ fontSize: '12px', color: 'gray', textAlign: 'center' }}>BIGSTEPS</Typography>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>WEATHER RESISTANT CAGE</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                                <AiOutlineStar style={{ fontSize: '15px', color: 'gray', marginTop: '5px' }} />
+                            </Box>
+                            <Typography style={{ fontSize: '13px', color: 'black', textAlign: 'center', marginTop: '5px' }}>$159.00 USD</Typography>
+                            <Box style={{ display: 'flex', justifyContent: 'center' }}>
+                                <Button className='button1' style={{ "&:hover": { backgroundColor: 'black' }, width: '90%', backgroundColor: '#9AC3E1', borderRadius: '0px', color: 'white', textAlign: 'center', marginTop: '5px' }}><HiOutlineShoppingBag style={{ fontSize: '18px', marginTop: '-2px' }} />ㅤADD TO CART</Button>
+                            </Box>
                         </Box>
                     </Grid>
                 </Grid>
